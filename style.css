@@ -1,0 +1,576 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Arial', sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#f8fafc;
+    color:#1e293b;
+
+}
+
+
+/* Navbar */
+
+
+header{
+
+    background:white;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+
+}
+
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.logo{
+
+    color:#2563eb;
+    font-size:30px;
+
+}
+
+
+nav ul{
+
+    display:flex;
+    gap:25px;
+    list-style:none;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+
+}
+
+
+
+
+/* Home */
+
+
+#home{
+
+    min-height:90vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px 10%;
+
+}
+
+
+
+.home-text{
+
+    width:50%;
+
+}
+
+
+
+.home-text h1{
+
+    font-size:45px;
+
+}
+
+
+.home-text span{
+
+    color:#2563eb;
+
+}
+
+
+.home-text p{
+
+    margin:20px 0;
+    line-height:1.7;
+
+}
+
+
+
+.btn{
+
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+
+}
+
+
+
+.home-image img{
+
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #2563eb;
+
+}
+
+
+
+
+
+/* Sections */
+
+
+section{
+
+    padding:70px 10%;
+    text-align:center;
+
+}
+
+
+section h2{
+
+    font-size:35px;
+    margin-bottom:30px;
+
+}
+
+
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    margin:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+
+.skills-box span{
+
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    margin:10px;
+    border-radius:25px;
+
+}
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+#home{
+
+    flex-direction:column;
+
+}
+
+
+.home-text{
+
+    width:100%;
+    text-align:center;
+
+}
+
+
+nav ul{
+
+    display:none;
+
+}
+
+
+}
+/* Extra Modern Design */
+
+
+.card{
+
+transition:0.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+.skills-box span{
+
+transition:0.3s;
+
+}
+
+
+.skills-box span:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+.home-image img{
+
+animation:float 3s infinite ease-in-out;
+
+}
+
+
+
+@keyframes float{
+
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+
+}
+
+
+
+.contact-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+footer{
+
+background:#2563eb;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+.contact-box a{
+
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+.contact-box a:hover{
+
+    text-decoration:underline;
+
+}
+.contact-box{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.contact-box a{
+
+    color:#2563eb;
+    text-decoration:none;
+
+}
+
+
+.contact-box a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+footer{
+
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+.card,
+.skills-box span,
+.btn{
+
+    transition:0.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+.animated-title span{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation: fadeName 1.5s ease forwards;
+
+}
+
+
+@keyframes fadeName{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+.typing-text{
+
+    color:#475569;
+    min-height:40px;
+
+}
+
+
+
+.social-links{
+
+    margin-top:25px;
+
+}
+
+
+
+.social-links a{
+
+    display:inline-block;
+
+    margin-right:15px;
+
+    padding:10px 20px;
+
+    border:2px solid #2563eb;
+
+    border-radius:25px;
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+
+.social-links a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+.project-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.project-card{
+
+    width:300px;
+
+    text-align:left;
+
+}
+
+
+
+.project-card h4{
+
+    color:#2563eb;
+
+    margin-top:15px;
+
+}
+.skill-container{
+
+    max-width:700px;
+    margin:auto;
+
+}
+
+
+.skill{
+
+    margin:25px 0;
+
+    text-align:left;
+
+}
+
+
+
+.bar{
+
+    background:#e2e8f0;
+
+    height:12px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.bar div{
+
+    height:100%;
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+
+
+.html{
+
+    width:90%;
+
+}
+
+
+.css{
+
+    width:85%;
+
+}
+
+
+.javascript{
+
+    width:70%;
+
+}
+
+
+.c{
+
+    width:80%;
+
+}
+
+
+.sql{
+
+    width:75%;
+
+}
